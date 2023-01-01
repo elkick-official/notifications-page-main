@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../fonts/PlusJakartaSans-VariableFont_wght.ttf'),
+    url('../fonts/static/PlusJakartaSans-ExtraBold.ttf'),
+    url('../fonts/static/PlusJakartaSans-Medium.ttf');
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans';
+  font-size: 16px;
+}
+:root {
+  --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --color-blue: hsl(219, 85%, 26%);
+  --color-white: #fff;
+  --color-very-light-grayish-blue: hsl(210, 60%, 98%);
+}
+.font-14 {
+  font-size: 14px;
+}
+.display-flex {
+  display: flex;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-item-center {
+  align-items: center;
+}
+.align-item-baseline {
+  align-items: baseline;
+}
+.gap-1 {
+  gap: 10px;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.dark-grayish-blue {
+  color: var(--dark-grayish-blue);
+}
+.blue {
+  color: var(--color-blue);
+}
+.grayish-blue {
+  color: var(--grayish-blue);
+}
+.border-radius-5 {
+  border-radius: 5px;
+}
+.box-shadow {
+  box-shadow: var(--box-shadow);
+}
+.notification-wrapper {
+  max-width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+}
+.notification-text {
+  font-size: 18px;
+}
+.notification-badge {
+  height: 20px;
+  width: 30px;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+.notification-detail-wrapper {
+  margin-top: 30px;
+}
+.notification-detail {
+  padding: 5px;
+  background-color: var(--color-very-light-grayish-blue);
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.notification-detail:hover {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  transform: translateX(10px);
+}
+.notification-detail:hover .dark-grayish-blue,
+.notification-detail:hover .blue {
+  color: var(--color-white);
+}
+.image-wrapper {
+  margin: 0px 10px 0px 10px;
+}
+.image-wrapper img {
+  height: 50px;
+  width: 50px;
+}
+.notification-content {
+  padding: 0px 10px;
+}
+
+.notification-status::after {
+  content: '';
+  background-color: green;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  left: 5px;
+}
